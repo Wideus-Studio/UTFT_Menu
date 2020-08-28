@@ -30,4 +30,36 @@ class Page {
     }
 };
 
+class Empty : public Page {
+    private:
+
+    public:
+    UIObject* localObjects[MAX_OBJECTS_ON_PAGE] = {
+        NULL,
+    };
+
+    MainPage(char* getName) {
+        Name = getName;
+        
+        for (int i = 0; i < MAX_OBJECTS_ON_PAGE; i++) {
+            UIObjects[i] = localObjects[i];
+        }
+    }
+
+    void Awake() override {
+        
+    }
+
+    void Start() override {
+        RepaintAll();
+    }
+
+    void Update() override {
+        for (int i = 0; i < MAX_OBJECTS_ON_PAGE; i++) {
+            if (UIObjects[i] == NULL) break;
+            UIObjects[i]->Update();
+        }
+    }
+};
+
 #endif
