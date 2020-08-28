@@ -6,8 +6,6 @@
 class PagesManager {
     public:
     Page* Pages[MAX_PAGES] = {
-        new MainPage("MainPage"),
-        new SimplePage("SimplePage"),
         NULL,
     };
 

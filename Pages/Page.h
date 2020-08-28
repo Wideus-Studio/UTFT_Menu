@@ -38,7 +38,7 @@ class Empty : public Page {
         NULL,
     };
 
-    MainPage(char* getName) {
+    Empty(char* getName) {
         Name = getName;
         
         for (int i = 0; i < MAX_OBJECTS_ON_PAGE; i++) {
