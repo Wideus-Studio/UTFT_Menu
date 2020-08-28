@@ -6,6 +6,7 @@
 class PagesManager {
     public:
     Page* Pages[MAX_PAGES] = {
+        new Empty("Empty"),
         NULL,
     };
 

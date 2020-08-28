@@ -1,7 +1,7 @@
 #ifndef _UITEXTPANEL_H_
 #define _UITEXTPANEL_H_
 
-#include "Menu/Menus.h"
+#include "UTFT_Menu/Menus.h"
 
 class UITextPanel : public UIObject {
     private:
