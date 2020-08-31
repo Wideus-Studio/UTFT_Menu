@@ -16,6 +16,8 @@ static UTFT GLCD(TFT32MEGA_2, 38,39,40,41);                   // тип дисп
 #include "Utilites/TouchEmulator.hpp"
 static TouchEmulator TOUCH = TouchEmulator();
 
+#include "Utilites/Math.hpp"
+
 #include "Utilites/Timer.h"
 #include "UI/Rect.h"
 #include "UI/Vector2D.h"
@@ -31,5 +33,8 @@ static TouchEmulator TOUCH = TouchEmulator();
 #include "Pages/Page.h"
 
 #include "Pages/PagesManager.h"
-static PagesManager PAGES = PagesManager();
+
+#include "Pages/PagesList.h"
+
+// static PagesManager PAGES = PagesManager();
 

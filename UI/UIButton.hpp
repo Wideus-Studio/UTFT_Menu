@@ -47,11 +47,11 @@ class UIButton : public UIObject {
         bool b_currentTouch = OnClick();
         if (b_currentTouch && !b_lastTouch) { 
             Press();
-            uint16_t t_color = Color;
-            Color = PressColor;
-            Repaint();
-            Color = t_color;
-            Repaint();
+            // uint16_t t_color = Color;
+            // Color = PressColor;
+            // Repaint();
+            // Color = t_color;
+            // Repaint();
         }
 
         b_lastTouch = b_currentTouch;

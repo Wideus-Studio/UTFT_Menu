@@ -22,6 +22,8 @@ class Text {
 
         text = array;
     }
+
+    int GetInt() { return atoi(text); }
 };
 
 #endif

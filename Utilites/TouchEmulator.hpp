@@ -10,9 +10,12 @@ class TouchEmulator {
     public:
     int x = 0, y = 0;
 
-    Timer touchTimer = Timer(100, [] {
+    Timer touchTimer = Timer(10, [] {
         b_isTouch = false;
     });
+
+    void InitTouch() {}
+    void setPrecision(int value) {}
 
     void ParseTouch(String touch) {
         String t_x = "";
