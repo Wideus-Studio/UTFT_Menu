@@ -4,3 +4,4 @@
 - UIPanel (Просто панель залитая одним цветом)
 - UIButton (Кнопка основанная на callback'ах)
 - UITextPanel (Текстовая панель)
+- UICheckBox
